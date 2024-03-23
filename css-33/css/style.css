@@ -19,13 +19,25 @@ body {
 
 
 .block {
-    
+    box-shadow:
+    40px 25px 40px #9e01aa,
+    30px -25px 20px #07ce04,
+    0 0 140px 100px #d87000,
+    -60px 25px 40px #3403e9
+    ;
+    border-radius: 30px;
 }
 
 .inline {
-    
+    box-shadow: 10px 10px 20px #000;
 }
 
 .img {
-
+    box-shadow:
+    40px 25px 40px #9e01aa,
+    30px -25px 20px #07ce04,
+    0 0 140px 100px #d87000,
+    -60px 25px 40px #3403e9
+    ;
+    border-radius: 30px;
 }
