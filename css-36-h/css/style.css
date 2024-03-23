@@ -1,25 +1,44 @@
 body {
-    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 * {
     box-sizing: border-box;
 }
 
-.block,
-.inline {
-    background: #e0d5c5;
+.container {
+    min-width: 1024px;
+    max-width: 1920px;
+    max-height: 700px;
+    background: rgb(228, 217, 203);
+
+    padding: 20px 10px;
+    border-radius: 45px 0 0 45px;
+    border: 1px solid black;
+
+    overflow: scroll;
 }
 
-/* ====================================================== */
-.block {
-    padding: 30px;
-    margin: 50px;
+h1 {
+    padding: 0;
+    margin: 0;
 }
 
+.card {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    background: #c83535;
 
-.block {}
+    padding: 25px 20px;
+    margin: 0 10px 20px 0;
+    border-radius: 30px;
+    border: 1px solid #000;
+    box-shadow: inset 0 0 10px black;
+}
 
-.inline {}
+.text {
+    max-width: 250px;
+}
 
 .img {}
