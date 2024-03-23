@@ -19,12 +19,11 @@ body {
 
 
 .block {
-    display: inline-block;
-    width: 400px;
+    
 }
 
 .inline {
-    display: none;
+
 }
 
 .img {
