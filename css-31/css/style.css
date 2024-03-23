@@ -1,0 +1,38 @@
+body {
+    font-size: 40px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.block,
+.inline {
+    background: #e0d5c5;
+}
+
+/* ====================================================== */
+.block {
+    /* padding: 50px 10px 20px 100px; */
+    /* 50 - top, last - bot, middle - sides */
+    /* padding: 50px 10px 20px; */
+    /* 50 top-bot, 20 right-left */
+    /* padding: 50px 20px; */
+
+    padding: 30px;
+
+}
+
+
+.block-1 {
+    margin: 0 0 50px 0;
+}
+/* .block-2 {
+    margin: 100px 0 0 0;
+} */
+.inline {
+    /* padding  с inline элементами мы никогда не используем */
+    /* margin  с inline элементами мы никогда не используем */
+}
+
+.img {}

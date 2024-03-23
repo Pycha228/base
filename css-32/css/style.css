@@ -1,0 +1,28 @@
+body {
+    font-size: 40px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.block,
+.inline {
+    background: #e0d5c5;
+}
+
+/* ====================================================== */
+.block {
+
+}
+
+
+.block-1 {
+
+}
+
+.inline {
+    
+}
+
+.img {}
