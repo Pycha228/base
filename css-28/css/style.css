@@ -1,3 +1,42 @@
-.some-text {
-    
+.test-1 {
+    font-family: 'Open Sans', "arial", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    font-style: italic;
+}
+.test-2 {
+    font-family: serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    text-decoration: line-through;
+}
+.test-3 {
+    font-family: serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    text-shadow: none;
+    text-transform: uppercase;
+    text-align: center;
+    text-indent: 40px;
+}
+.test-4 {
+    font-family: serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    word-spacing: 30px;
+    text-decoration-style: wavy;
+    text-decoration-line: overline;
+}
+.test-5 {
+    font-family: serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-decoration-style: double;
+    text-decoration-line: underline;
 }
