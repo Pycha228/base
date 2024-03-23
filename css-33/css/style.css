@@ -13,23 +13,19 @@ body {
 
 /* ====================================================== */
 .block {
-    /* border: 50px groove #96fa14;
-
-    border-top: 15px double #000;
-    border-width: 10px;
-    border-style: dotted;
-    border-color: #000;
-
-    border-bottom-color: #ca09a7; */
+    padding: 30px;
+    margin: 50px;
 }
 
 
-.block-1 {
-
+.block {
+    
 }
 
 .inline {
     
 }
 
-.img {}
+.img {
+
+}
