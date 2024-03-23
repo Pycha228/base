@@ -19,7 +19,22 @@ body {
 
 
 .block {
-    
+    /* свойство непрозрачности */
+    /* opacity: 0.5; */
+    /* visibility - невидимость для курсора и глаза */
+    /* visibility: hidden; */
+
+
+    width: 400px;
+    height: 200px;
+
+    /* hidden - обрезает элементы внутри того элемента на кого нацелено свойство */
+    /* overflow: hidden; */
+    /* auto - добавляет скролл */
+    /* overflow: auto; */
+
+    overflow: scroll;
+
 }
 
 .inline {
