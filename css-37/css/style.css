@@ -6,41 +6,19 @@ body {
     box-sizing: border-box;
 }
 
-.block,
-.inline {
-    background: #e0d5c5;
+.block {
+    margin: 5vw;
+    height: 50vh;
+    box-shadow: 0 0 0.5 #0615633b;
+    border-radius: 2vw;
+    background: #fff;
 }
 
 /* ====================================================== */
 .block {
-    padding: 30px;
-    margin: 50px;
-}
+    background: #ff8989;
 
+    /* background-color: #000; */
 
-.block {
-    /* свойство непрозрачности */
-    /* opacity: 0.5; */
-    /* visibility - невидимость для курсора и глаза */
-    /* visibility: hidden; */
-
-
-    width: 400px;
-    height: 200px;
-
-    /* hidden - обрезает элементы внутри того элемента на кого нацелено свойство */
-    /* overflow: hidden; */
-    /* auto - добавляет скролл */
-    /* overflow: auto; */
-
-    overflow: scroll;
-
-}
-
-.inline {
-
-}
-
-.img {
-
+    
 }
