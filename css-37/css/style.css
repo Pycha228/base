@@ -1,5 +1,6 @@
 body {
     font-size: 40px;
+    background: #f3f3f6;
 }
 
 * {
@@ -9,16 +10,28 @@ body {
 .block {
     margin: 5vw;
     height: 50vh;
-    box-shadow: 0 0 0.5 #0615633b;
+    box-shadow: 0 0.5vw 3vw #0615633b;
     border-radius: 2vw;
     background: #fff;
 }
 
 /* ====================================================== */
 .block {
-    background: #ff8989;
+    overflow: auto;
+    background: url('../img/monkey.jpg') 50% 50% / contain no-repeat;
+
+
+    /* background: url('../img/monkey.jpg') 0% 0% / 100% auto no-repeat; */
 
     /* background-color: #000; */
 
-    
+    background-image: url('../img/tiger.jpg'), url('../img/monkey.jpg');
+    /* background-image: linear-gradient(90deg, #efa0a0 40%, #8787ef); */
+    /* background-image: radial-gradient(#efa0a0 40%, #8787ef); */
+    /* background-repeat: no-repeat; */
+    background-position: 50% 50%, 0 0;
+    /* background-attachment: scroll; */
+    /* background-attachment: fixed; */
+    /* background-attachment: local; */
+    /* background-size: 400px auto; */
 }
