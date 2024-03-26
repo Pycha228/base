@@ -1,8 +1,8 @@
 body {
-    font-family: "Montserrat", "Arial", sans-serif;
     background: #181e34;
-    /* font-size: 16px; */
+    font-family: "Montserrat", "Arial", sans-serif;
     /* font-weight: 400; */
+    /* font-size: 16px; */
     line-height: 150%;
     color: #fff;
 }
@@ -14,7 +14,10 @@ body {
     height: 100%;
 }
 
-/* =================================================================== */
+/* ================================================================== */
+/* ================================================================== */
+/* ================================================================== */
+
 
 .header {
     padding: 30px 0 36px;
@@ -22,7 +25,6 @@ body {
 
 .header-inner {
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
@@ -40,8 +42,210 @@ body {
 
 .header-button {
     padding: 14px 30px;
+    font-weight: 500;
+    color: #2766ae;
     background: #fff;
     border-radius: 100px;
-    color: #2766ae;
-    font-weight: 500;
+}
+
+/* ===========================  Hero-section  ========================== */
+
+.hero {
+    background: url('/lesson-43-layout/img/hero-bg.jpg') 10% 50% / cover no-repeat;
+    padding: 120px 0;
+}
+
+.hero-title {
+    margin-bottom: 60px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hero-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    max-width: 436px;
+}
+
+.hero-paragraph {
+    margin-bottom: 15px;
+}
+
+.hero-text span {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #2785be;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    width: 100%;
+}
+
+
+.hero-button-one,
+.hero-button-two {
+    display: flex;
+    padding: 18px 30px;
+    border-radius: 100px;
+    max-width: 320px;
+    text-align: center;
+    justify-content: center;
+}
+
+.hero-button-one img,
+.hero-button-two img {
+    margin-left: 4px;
+}
+
+.hero-button-one {
+    background: linear-gradient(180deg, #2C8EC9 0%, #0E5C8B 100%);
+    /* margin-bottom: 10px; */
+}
+
+.hero-button-two {
+    background: linear-gradient(129.81deg, #2C8EC9 5.947%, #0E5C8B 95.403%);
+}
+
+.bottom {
+    margin-bottom: 10px;
+}
+
+/* .hero-button-two svg {
+    align-self: flex-end;
+} */
+
+/* ========================== second ============================= */
+
+.cards {
+    padding: 120px 0;
+}
+
+.cards-title {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cards-text {
+    margin: 0 auto 60px;
+    text-align: center;
+    max-width: 513px;
+}
+
+.cards-content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.cards-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -14px;
+    margin-bottom: -28px;
+    padding-bottom: 30px;
+}
+
+.cards-flex-item {
+    margin-bottom: 28px;
+    padding: 0 14px;
+    flex: 0 0 25%;
+}
+
+.cards-flex-inner {
+    box-shadow: 4px 4px 13px 0px rgba(11, 15, 30, 0.79);
+    border: 2px solid rgb(10, 55, 83);
+    background: #0e5c8b;
+    max-width: 204px;
+    padding: 28px;
+    border-radius: 16px;
+}
+
+.cards-flex-title {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+
+.cards-flex-text {
+    text-align: center;
+}
+
+.cards-button {
+    margin: 0 auto;
+    padding: 18px 30px;
+    max-width: 436px;
+    width: 100%;
+    border-radius: 100px;
+    background: linear-gradient(180.00deg, rgb(44, 142, 201), rgb(14, 92, 139) 100%);
+    text-align: center;
+}
+
+/* ====================== footer =================================== */
+
+.footer {
+    border-top: 1px solid #323925;
+    padding: 60px 0;
+}
+
+.footer-inner {
+    display: flex;
+}
+
+.footer-descr {
+    max-width: 267px;
+    margin-right: auto;
+}
+
+.footer-descr a {
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.footer-text {
+    max-width: 267px;
+}
+
+.footer-col {
+    max-width: 204px;
+    width: 100%;
+}
+
+.footer-col-margin {
+    margin-right: 28px;
+}
+
+.footer-title {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer-list {
+    margin-right: 117px;
+}
+
+.footer-item {
+    margin-bottom: 10px;
 }
