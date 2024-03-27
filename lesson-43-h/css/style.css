@@ -51,7 +51,7 @@ body {
 /* ===========================  Hero-section  ========================== */
 
 .hero {
-    background: url('../lesson-43-layout/img/hero-bg.jpg') 10% 50% / cover no-repeat;
+    background: url('../img/hero-bg.jpg') 10% 50% / cover no-repeat;
     padding: 120px 0;
 }
 
