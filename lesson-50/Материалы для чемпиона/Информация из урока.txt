@@ -1,0 +1,3 @@
+ПОЛЕЗНЫЕ ССЫЛКИ:
+
+https://ru.bem.info/methodology/quick-start/ - документация по БЭМ
