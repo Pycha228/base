@@ -68,7 +68,7 @@ p {
 }
 
 .vhw__quad {
-  width: 50vh;
+  width: 50vw;
   height: 100vw;
 }
 
@@ -84,3 +84,4 @@ p {
 .rem__text {
   font-size: 2rem;
 }
+
