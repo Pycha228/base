@@ -45,3 +45,11 @@ body {
 }
 
 /* ================== Выполнение дз ниже =================== */
+
+.box__scale {
+    transition: right .3s ease-in-out;
+}
+
+.box:hover span {
+    transition: opacity .3s .3s;
+}

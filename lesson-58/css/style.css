@@ -50,3 +50,37 @@ body {
 
 /* ========================================================= */
 
+.button {
+    transition: background 0.3s, border-radius .3s .3s;
+
+    /* transition-duration: ; */
+    /* transition-property: ; */
+    /* transition-delay: ; */
+    /* transition-timing-function: ; */
+}
+
+.button:hover {
+    background: rgb(231, 113, 113);
+    border-radius: 100px;
+}
+
+
+.block {
+    transition-duration: 1s;
+}
+
+.red {
+    transition-timing-function: ease;
+}
+
+.blue {
+    transition-timing-function: ease-in;
+}
+
+.orange {
+    transition-timing-function: ease-out;
+}
+
+.purple {
+    transition-timing-function: cubic-bezier(1, 0, 0, 1);
+}
