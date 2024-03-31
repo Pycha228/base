@@ -50,23 +50,26 @@ h2 {
 /* ==================================================== */
 
 .translate__red {
-    transform: translateX(100px);
+    transform: translate(0px, 0px);
 }
+
 .translate__blue {
-    transform: translate(100%, 0);
+    transform: translate(100%, 0px);
 }
 
 .rotate__red {
     transform: rotate(43deg);
     transform-origin: 0% 0%;
 }
+
 .rotate__blue {
-    transform: rotateX(43deg);
+    transform: rotate(43deg);
 }
 
 .scale__red {
-    transform: scale(1.3);
+    transform: scale(1);
 }
+
 .scale__blue {
-    transform: translateX(100px) scale(1.4);
+    transform: translate(100px) scale(1.4);
 }
