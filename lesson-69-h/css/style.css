@@ -1,8 +1,14 @@
+:root {
+    --accent-text: #1D6FB6;
+    --white-text: #F8FCFF;
+}
+
 body {
     font-family: "Montserrat", "Arial", sans-serif;
     line-height: 125%;
     color: #25282B;
-    background: #F8FCFF;
+    background: var(--white-text);
+    color: var(--accent-text);
 }
 
 .container {
@@ -25,6 +31,7 @@ body {
     min-height: 108px;
     align-content: center;
     align-items: center;
+    color: #25282B;
 }
 
 .header__logo {
@@ -54,7 +61,7 @@ body {
     padding: 120px 0;
     /* background: #000; */
     line-height: 1.5;
-    color: #F8FCFF;
+    color: var(--white-text);
 }
 
 .hero__inner {
@@ -91,11 +98,11 @@ body {
 }
 
 .hero__list-item:hover {
-    color: #1D6FB6;
+    color: var(--accent-text);
 }
 
 .hero__list-item:hover path {
-    fill: #1D6FB6;
+    fill: var(--accent-text);
 }
 
 .hero__video {
@@ -135,8 +142,8 @@ body {
 
     font-size: 16px;
     font-weight: 500;
-    line-height: 20px;
-    color: #1D6FB6;
+    line-height: calc(20px / 16px);
+    color: var(--accent-text);
     background: #D0DCE7;
 
     height: 56px;
@@ -149,7 +156,7 @@ body {
 
 .button:hover {
     background: #83ADD3;
-    color: #f8fcff;
+    color: var(--white-text);
 }
 
 /* ====================== main__general ===================== */
@@ -163,6 +170,11 @@ body {
     align-items: start;
     gap: 30px;
     justify-content: space-between;
+}
+
+.main__sidebar {
+    position: sticky;
+    top: 5vh;
 }
 
 .main__body {
@@ -179,9 +191,10 @@ body {
     border: 2px solid #d0dce7;
     max-width: 282px;
     width: 100%;
-    line-height: 20px;
+    min-height: 60vh;
     font-weight: 500;
     font-size: 16px;
+    color: #25282B;
 }
 
 .sidebar__item {
@@ -192,8 +205,6 @@ body {
     margin-bottom: 0;
 }
 
-.sidebar__link {}
-
 /* ======================== gallery =============================== */
 
 .gallery {
@@ -202,8 +213,7 @@ body {
     gap: 24px;
     grid-auto-flow: dense;
     font-weight: 500;
-    line-height: 20px;
-    color: #F8FCFF;
+    color: var(--white-text);
 }
 
 .gallery__img {
@@ -241,7 +251,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #1D6FB6B3;
+    background: #1D6FB6B2;
     height: 53px;
 
     transform: translateY(100%);
@@ -292,10 +302,10 @@ body {
     border-radius: 0 100px 100px 0;
     padding: 18px 15px;
     min-width: 33.855%;
-    background: #F8FCFF;
-    color: #1D6FB6;
+    background: var(--white-text);
+    color: var(--accent-text);
     text-align: center;
-    
+
     animation: badge-action 2s ease-in-out infinite alternate;
 }
 
@@ -303,9 +313,11 @@ body {
     0% {
         min-width: 33.885%;
     }
+
     66.666% {
         min-width: 33.885%;
     }
+
     100% {
         min-width: 37.3%;
     }
@@ -319,4 +331,20 @@ body {
 
 .products__item-button {
     margin: 0 auto;
+}
+
+/* ============================== footer =========================== */
+
+.footer {
+    padding: 30px 0;
+    color: var(--white-text);
+    text-align: center;
+    background: #788088;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
