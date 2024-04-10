@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.body {
+    height: 200vh;
+}
+
+.body--fixed {
+    overflow-y: hidden;
+}
+
+.btn-open {
+    background: #fff;
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+}
+.modal {
+    position: fixed;
+    inset: 0;
+    background: #000000c1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+.modal--open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal__window {
+    position: relative;
+    width: 50vw;
+    min-height: 40vh;
+    border-radius: 12px;
+    background: #fff;
+    padding: 50px 20px 20px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.modal__close-btn {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}

@@ -1,19 +1,28 @@
-const button = document.querySelector('.btn')
-let btnIsRed = false
+// const btn = document.querySelector('.btn')
 
-button.addEventListener('click', () => {
-    if(btnIsRed) {
-        button.style.backgroundColor = 'blue'
-        btnIsRed = false
+// const text = document.querySelector('.text')
+
+// btn.addEventListener('click', () => {
+//     text.classList.toggle('move')
+// })
+
+
+// ===========================================================================
+
+
+const btn = document.querySelector('.btn')
+
+const text = document.querySelector('.text')
+
+btn.addEventListener('click', () => {
+    text.classList.toggle('move')
+    if (text.classList.contains('move')) {
+        text.textContent = 'Я пашол вправо'
     } else {
-        button.style.backgroundColor = 'red'
-        btnIsRed = true
+        text.innerText = 'Текст'
     }
 })
 
 
-function scrolling () {
-    console.log('scroll')
-}
 
-// document.addEventListener('scroll', scrolling)
+// ===========================================================================
