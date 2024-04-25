@@ -6,7 +6,7 @@ for (let i = 2; i <= 12; i = i + 2) {
 console.log('Тест 1')
 
 
-for (let j = 10; j >= 1; j = j - 1) {
+for (let j = 10; j >= 1; j--) {
     console.log(j)
 }
 
@@ -21,11 +21,31 @@ while(a <= 10) {
 
 console.log('Тест 3')
 
-let b = 11
+// Исправлние
+// 
+// 
 
-while (b > 1) {
-    b = b - 1;
-    console.log(b)
+// Вариант 1
+
+let b1 = 10
+
+while (b1 > 1) {
+    console.log(b1)
+    b1--;
 }
+console.log(b1)
 
-console.log('Тест 4')
+console.log('Тест 4-1')
+
+// Вариант 2
+
+
+let b2 = 10
+
+do {
+    console.log(b2)
+    b2--;
+}
+while (b2 >= 1)
+
+console.log('Тест 4-2')
