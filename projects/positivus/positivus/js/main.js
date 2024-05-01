@@ -154,7 +154,7 @@
             el: '.testimonials__pagination',
             clickable: true,
             renderBullet: function (index, className) {
-                return '<span class="' + className + '"><img src="../img/icons/pagination.svg"></span>';
+                return '<span class="' + className + '"><img src="img/icons/pagination.svg"></span>';
             },
             bulletClass: 'testimonials__bullet',
             bulletActiveClass: 'testimonials__bullet-active',
