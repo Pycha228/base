@@ -660,7 +660,7 @@ body {
 
 .team__top {
     display: flex;
-    gap: 40px;
+    gap: 40px 40px;
     align-items: center;
     margin-bottom: 82px;
 }
@@ -872,7 +872,7 @@ body {
 .contact__top {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 40px 40px;
     margin-bottom: 82px;
 }
 
@@ -886,7 +886,6 @@ body {
     display: flex;
     gap: 30px;
     justify-content: space-between;
-    position: relative;
     padding: 60px 0 100px 80px;
     background: var(--accent-color-3);
     border-radius: 45px;
@@ -896,24 +895,76 @@ body {
 
 }
 
-.contact__check-label {
-    display: flex;
-    gap: 14px;
-}
-
-.contact__name-label {}
-
-.contact__email-label {}
-
-.contact__message-label {}
-
-.contact__button {}
-
-.button {}
-
-.contact__img img{
+.contact__body {
+    max-width: 556px;
     width: 100%;
 }
+
+.contact__form-radio {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.contact__label-radio {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.contact__label-radio input {
+    width: 28px;
+    height: 28px;
+}
+
+.contact__name-label,
+.contact__email-label,
+.contact__message-label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.contact__message-label {
+    margin-bottom: 40px;
+}
+
+.contact__name-label input,
+.contact__email-label input,
+.contact__message-label textarea {
+    padding: 18px 30px;
+    border: 1px solid var(--text-dark);
+    border-radius: 14px;
+    background: var(--text-light);
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.contact__name-label input::placeholder,
+.contact__email-label input::placeholder,
+.contact__message-label textarea::placeholder {
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.contact__button {
+    width: 100%;
+    background: var(--text-dark);
+    color: var(--text-light);
+}
+
+.contact__img img {
+    width: 100%;
+}
+
+
 
 
 
@@ -1047,6 +1098,18 @@ body {
     }
 
     /* - - - - - - - */
+    
+    .contact__inner {
+        padding: 60px 80px 100px;
+    }
+
+    .contact__form {
+        justify-self: center;
+    }
+
+    .contact__img {
+        display: none;
+    }
 
 }
 
@@ -1112,6 +1175,25 @@ body {
 
     .accordion-list__control-title {
         font-size: 25px;
+    }
+
+    /* - - - - - - - - */
+
+    .team__top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* - - - - - - - - */
+
+    .contact__top {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 82px;
+    }
+
+    .contact__body {
+        margin: 0 auto;
     }
 
 }
@@ -1215,6 +1297,13 @@ body {
     .team__list {
         grid-template-columns: 1fr;
         max-width: 500px;
+    }
+
+    /* - - - - - - - -  */
+
+    .contact__form-radio {
+        padding: 0 52px;
+        justify-content: space-between;
     }
 
 }
@@ -1336,6 +1425,23 @@ body {
     .team__button {
         max-width: 390px;
         width: 100%;
+    }
+
+    /* - - - - - - - - */
+
+    .contact__inner {
+        padding: 40px 30px;
+    }
+
+    .contact__form {
+        max-width: 330px;
+        margin: 0 auto;
+    }
+
+    .contact__form-radio {
+        padding: 0 22px;
+        font-size: 16px;
+        line-height: 20px;
     }
 }
 

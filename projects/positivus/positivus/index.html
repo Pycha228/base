@@ -80,7 +80,7 @@
                         </a>
                     </div>
                     <div class="hero__img">
-                        <img src="/img/content/hero-horn.svg" alt="">
+                        <img src="img/content/hero-horn.svg" alt="">
                     </div>
                 </div>
             </div>
@@ -1255,27 +1255,35 @@
                     </p>
                 </div>
                 <div class="contact__inner">
-                    <form class="contact__form">
+                    <div class="contact__body">
                         <div class="contact__form-radio">
-                            <input type="radio">Say Hi
-                            <input type="radio">Get a Quote
+                            <label for="radio" class="contact__label-radio">
+                                <input name="radio" type="radio">Say Hi
+                            </label>
+                            <label for="radio" class="contact__label-radio">
+                                <input name="radio" type="radio">Get a Quote
+                            </label>
                         </div>
-                        <label class="contact__name-label">
-                            Name
-                            <input type="name" placeholder="Name">
-                        </label>
-                        <label class="contact__email-label">
-                            Email
-                            <input type="email" placeholder="Email">
-                        </label>
-                        <label class="contact__message-label">
-                            Message
-                            <textarea id="" cols="30" rows="10" placeholder="Message"></textarea>
-                        </label>
-                        <button class="contact__button button" type="submit">
-                            Send Message
-                        </button>
-                    </form>
+                        <form class="contact__form">
+                            <label class="contact__name-label">
+                                Name
+                                <input type="name" placeholder="Name">
+                            </label>
+                            <label class="contact__email-label">
+                                Email*
+                                <input type="email" placeholder="Email" required>
+                            </label>
+                            <label class="contact__message-label">
+                                Message*
+                                <textarea id="" cols="30" rows="7" placeholder="Message" required>
+    
+                                </textarea>
+                            </label>
+                            <button class="contact__button button" type="submit">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
                     <div class="contact__img">
                         <img src="img/content/contact__star.png" alt="">
                     </div>
