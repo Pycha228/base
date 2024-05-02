@@ -1,0 +1,41 @@
+.hero__inner {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.hero__info {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    max-width: 531px;
+}
+
+.hero__title {
+    font-family: "Space Grotesk";
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 77px;
+    color: var(--text-dark);
+}
+
+.hero__text {
+    max-width: 498px;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.hero__button {
+    max-width: 264px;
+    background: var(--accent-color-1);
+    color: var(--text-light);
+}
+
+.hero__img img {
+    width: 100%;
+}
+
+.hero__img--mobile {
+    display: none;
+}

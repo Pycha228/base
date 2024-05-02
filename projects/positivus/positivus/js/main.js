@@ -17,6 +17,28 @@
         }
     }
 
+    // Modal
+
+    const modal = document.querySelector('.modal')
+    const modalButton = document.querySelector('.hero__button')
+
+    modalButton.addEventListener('click', openModal)
+    modal.addEventListener('click', closeModal)
+
+    function openModal(e) {
+        e.preventDefault()
+        document.body.classList.toggle('body--opened-modal')
+    }
+
+    function closeModal(e) {
+        e.preventDefault()
+
+        const target = e.target
+        if(target.closest('.modal__cancel') || target.classList.contains('modal')) {
+            document.body.classList.remove('body--opened-modal')
+        }
+    }
+
     // Studies slider
 
         new Swiper('.studies__slider', {
@@ -148,40 +170,20 @@
     new Swiper('.testimonials__slider', {
         spaceBetween: 50,
         centeredSlides: true,
-        slidesPerView: 2,
+        slidesPerView: 1.9,
         loop: true,
         pagination: {
             el: '.testimonials__pagination',
             clickable: true,
             renderBullet: function (index, className) {
-                return '<span class="' + className + '"><img src="img/icons/pagination.svg"></span>';
+                return '<span class="' + className + '">' + (index + 1) + "</span>";
             },
-            bulletClass: 'testimonials__bullet',
-            bulletActiveClass: 'testimonials__bullet-active',
         },
         navigation: {
             nextEl: '.testimonials__next',
             prevEl: '.testimonials__prev',
         },
     });
-
-    
-    // new Swiper('.testimonials__slider', {
-    //     spaceBetween: 50,
-    //     centeredSlides: true,
-    //     slidesPerView: 1.9,
-    //     pagination: {
-    //         el: '.testimonials__pagination',
-    //         clickable: true,
-    //         renderBullet: function (index, className) {
-    //             return '<span class="' + className + '"><img src="../img/icons/pagination.svg"></span>';
-    //         },
-    //     },
-    //     navigation: {
-    //         nextEl: '.testimonials__next',
-    //         prevEl: '.testimonials__prev',
-    //     },
-    // });
     
 
 })()

@@ -1,0 +1,139 @@
+.footer {
+    color: var(--text-light);
+}
+
+.footer__inner {
+    border-radius: 45px 45px 0px 0px;
+    background: var(--accent-color-1);
+    padding: 55px 60px 50px;
+}
+
+.footer__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 37px 15px;
+    margin-bottom: 66px;
+}
+
+.footer__logo {}
+
+.footer__nav {}
+
+.footer__nav-list {
+    display: flex;
+    align-items: center;
+    gap: 15px 40px;
+    color: var(--text-light);
+}
+
+.footer__nav-item {}
+
+.footer__nav-link {
+    vertical-align: middle;
+    font-size: 18px;
+    line-height: 23px;
+    text-decoration-line: underline;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+}
+
+.socials--mobile {
+    display: none;
+}
+
+.socials__linkedin {}
+
+.socials__facebook {}
+
+.socials__twitter {}
+
+
+
+.footer__body {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding-bottom: 49px;
+    border-bottom: 1px solid var(--text-light);
+}
+
+.footer__left {
+    max-width: 332px;
+    width: 100%;
+}
+
+.footer__left-title {
+    display: inline-block;
+    padding: 0 7px;
+    border-radius: 7px;
+    color: var(--text-dark);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    background: var(--accent-color-2);
+    margin-bottom: 27px;
+}
+
+.footer__left-email,
+.footer__left-tel,
+.footer__left-address {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 20px;
+}
+
+.footer__left-address {
+    margin-bottom: 0;
+}
+
+.footer__form {
+    display: flex;
+    padding: 58px 40px;
+    gap: 22px 20px;
+    background: #292A32;
+    border-radius: 14px;
+}
+
+.footer__form input {
+    padding: 22px 35px;
+    border: 1px solid var(--text-light);
+    border-radius: 14px;
+    background: transparent;
+    font-size: 18px;
+    line-height: 23px;
+    color: var(--text-light);
+}
+
+.footer__form input::placeholder {
+    font-size: 18px;
+    line-height: 23px
+}
+
+.footer__button {
+    font-size: 20px;
+    line-height: 28px;
+    background: var(--accent-color-2);
+}
+
+.button {}
+
+.footer__bottom {
+    display: flex;
+    gap: 40px;
+}
+
+.footer__bottom-text {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.footer__bottom-link {
+    font-size: 18px;
+    line-height: 28px;
+    text-decoration: underline;
+}
