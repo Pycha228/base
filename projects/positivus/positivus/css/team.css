@@ -1,13 +1,9 @@
 .team__top {
     display: flex;
-    gap: 40px 40px;
+    gap: 30px 40px;
     align-items: center;
     margin-bottom: 82px;
 }
-
-.team__top-title {}
-
-.h2 {}
 
 .team__top-text {
     max-width: 473px;
@@ -48,8 +44,6 @@
 .team__item-img img {
     width: 100%;
 }
-
-.team__item-info {}
 
 .team__item-name {
     font-size: 20px;

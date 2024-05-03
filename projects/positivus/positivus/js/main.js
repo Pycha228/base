@@ -168,126 +168,32 @@
     // Testimonials slider
 
     new Swiper('.testimonials__slider', {
-        spaceBetween: 50,
+        spaceBetween: 30,
         centeredSlides: true,
-        slidesPerView: 1.9,
+        slidesPerView: 1.1,
         loop: true,
         pagination: {
             el: '.testimonials__pagination',
             clickable: true,
-            renderBullet: function (index, className) {
-                return '<span class="' + className + '">' + (index + 1) + "</span>";
-            },
         },
         navigation: {
             nextEl: '.testimonials__next',
             prevEl: '.testimonials__prev',
         },
+        breakpoints: {
+            601: {
+                slidesPerView: 1.3,
+                spaceBetween: 30,
+            },
+            801: {
+                slidesPerView: 1.5,
+                spaceBetween: 40,
+            },
+            1001: {
+                slidesPerView: 1.9,
+                spaceBetween: 50,
+            }
+        }
     });
     
-
 })()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// (function () {
-
-//     document.addEventListener('click', burgerInit)
-
-//     function burgerInit(e) {
-
-//         const burgerIcon = e.target.closest('.burger-icon')
-//         const burgerNavLink = e.target.closest('.nav__link')
-//         if(!burgerIcon && !burgerNavLink) return
-        
-//         if(!document.body.classList.contains('body--opened-menu')) {
-//             document.body.classList.add('body--opened-menu')
-//         } else {
-//             document.body.classList.remove('body--opened-menu')
-//         }
-
-//     }
-
-
-// })()
-
-// Accordion
-// 
-// 
-// 
-
-// const accordionList = document.querySelector('.accordion-list')
-        
-        // accordionList.addEventListener('click', e => {
-
-        //     const accordionOpenedItem = accordionList.querySelector('.accordion-list__item--opened')
-        //     const accordionOpenedContent = accordionList.querySelector('.accordion-list__item--opened .accordion-list__content')
-            
-        //     const accordionControl = e.target.closest('.accordion-list__control')
-        //     if(!accordionControl) return
-        //     e.preventDefault()
-
-        //     const accordionItem = accordionControl.parentElement
-        //     const accordionContent = accordionControl.nextElementSibling
-
-        //     if (accordionOpenedItem && accordionItem != accordionOpenedItem) {
-        //         accordionOpenedItem.classList.remove('accordion-list__item--opened');
-        //         accordionOpenedContent.style.maxHeight = null;
-        //     }
-
-        //     accordionItem.classList.toggle('accordion-list__item--opened')
-
-        //     if(accordionItem.classList.contains('accordion-list__item--opened')) {
-        //         accordionContent.style.maxHeight = accordionContent.scrollHeight + "px"
-        //     } else {
-        //         accordionContent.style.maxHeight = null
-        //     }
-
-        // })
-
-
-// 
-// 
-// 

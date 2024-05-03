@@ -2,7 +2,6 @@
     display: flex;
     gap: 30px;
     justify-content: space-between;
-    /* align-items: center; */
 }
 
 .hero__info {
@@ -30,6 +29,12 @@
     max-width: 264px;
     background: var(--accent-color-1);
     color: var(--text-light);
+
+    transition: var(--transition);
+}
+
+.hero__button:hover {
+    color: var(--accent-color-2);
 }
 
 .hero__img img {

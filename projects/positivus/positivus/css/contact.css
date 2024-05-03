@@ -20,8 +20,6 @@
     border-radius: 45px;
 }
 
-.contact__form {}
-
 .contact__body {
     max-width: 556px;
     width: 100%;
@@ -44,8 +42,24 @@
 }
 
 .contact__label-radio input {
+    appearance: none;
+    border-radius: 50%;
+    border: 1px solid var(--text-dark);
+    background: var(--text-light);
     width: 28px;
     height: 28px;
+    position: relative;
+}
+
+.contact__label-radio input:checked::before {
+    content: '';
+    position: absolute;
+    top: 21%;
+    left: 19%;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    background: var(--accent-color-2);
 }
 
 .contact__name-label,
@@ -85,6 +99,10 @@
     width: 100%;
     background: var(--text-dark);
     color: var(--text-light);
+}
+
+.contact__button--mobile {
+    display: none;
 }
 
 .contact__img img {

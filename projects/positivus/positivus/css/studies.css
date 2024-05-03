@@ -5,14 +5,14 @@
     margin-bottom: 82px;
 }
 
-.studies__title {
+.studies__top-title {
     padding: 0 7px;
     background: var(--accent-color-2);
     border-radius: 7px;
     white-space: nowrap;
 }
 
-.studies__text {
+.studies__top-text {
     font-size: 18px;
     line-height: 23px;
     max-width: 580px;

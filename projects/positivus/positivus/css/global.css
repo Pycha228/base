@@ -6,6 +6,11 @@ body {
     background: var(--text-light);
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 30px;
+}
+
 .h3 {
     font-size: 30px;
     font-weight: 500;
@@ -44,17 +49,14 @@ body {
 }
 
 .main__hero {
-    margin-bottom: 82px;
-}
-
-.main__companies {
-    margin-bottom: 131px;
+    margin-bottom: 70px;
 }
 
 .main__services {
     margin-bottom: 163px;
 }
 
+.main__companies,
 .main__studies,
 .main__process,
 .main__testimonials,
@@ -63,7 +65,7 @@ body {
 }
 
 .main__team {
-    margin-bottom: 208px;
+    margin-bottom: 100px;
 }
 
 .container {
@@ -85,9 +87,13 @@ body {
     font-weight: normal;
     line-height: 1.4;
     white-space: nowrap;
+
+    transition: var(--transition);
 }
 
-.button:hover {}
+.button:hover {
+    color: var(--accent-color-2);
+}
 
 .body--opened-modal .modal {
     opacity: 1;
@@ -104,7 +110,8 @@ body {
 
     opacity: 0;
     visibility: hidden;
-    transition: all 0.4s;
+    transition: var(--transition);
+    z-index: 12;
 }
 
 .modal__window {
