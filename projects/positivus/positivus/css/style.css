@@ -17,7 +17,7 @@
     --accent-color-3: #F3F3F3;
     --text-light: #FFFFFF;
     --text-dark: #000000;
-    --transition: var(--transition);
+    --transition: all .4s;
 }
 
 /* ================================================= */
