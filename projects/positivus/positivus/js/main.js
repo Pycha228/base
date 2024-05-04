@@ -43,10 +43,12 @@
 
         new Swiper('.studies__slider', {
 
-            slidesPerView: 1.1,
+            slidesPerView: 1,
             spaceBetween: 30,
             loop: true,
             freeMode: true,
+            centeredSlides: true,
+            allowTouchMove: false,
             autoplay: {
             delay: 3000,
             speed: 2000,
@@ -55,7 +57,7 @@
             },
             breakpoints: {
                     320: {
-                        slidesPerView: 1.1,
+                        slidesPerView: 1,
                         spaceBetween: 20,
                     },
                     480: {

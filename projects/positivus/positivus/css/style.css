@@ -131,6 +131,19 @@
     display: flex;
     align-items: center;
     max-width: 51px;
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+.testimonials__prev:hover path,
+.testimonials__next:hover path{
+    fill: var(--accent-color-2);
+}
+
+.testimonials__pagination {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .testimonials__pagination .swiper-pagination-bullet {
@@ -192,7 +205,9 @@
     /* - - - - - - - */
 
     .nav {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: fixed;
         inset: 0;
         background: #f3f3f3;
@@ -209,6 +224,7 @@
         visibility: visible;
         opacity: 1;
         transform: translateY(0%);
+        padding-bottom: 20vh;
     }
 
     .nav__list {
@@ -458,7 +474,7 @@
 
     /* - - - - - - -  */
 
-    .accordion-list__item {
+    .accordion-list__control {
         padding: 35px 50px;
     }
 
@@ -490,7 +506,7 @@
 
     /* - - - - - - -  */
 
-    .accordion-list__item {
+    .accordion-list__control {
         padding: 35px 40px;
     }
 
@@ -606,7 +622,7 @@
 
     .modal__window {
         padding: 40px 20px 50px;
-        max-width: 350px;
+        width: clamp(350px, 90%, 584px);
     }
 
     .modal__cancel {
@@ -691,11 +707,11 @@
         line-height: 33px;
     }
 
-    .services__item-link {
+    .services__item-el {
         max-width: 41px;
     }
 
-    .services__item-link span {
+    .services__item-el span {
         display: none;
     }
 
@@ -760,7 +776,7 @@
         line-height: 24px;
     }
 
-    .accordion-list__item {
+    .accordion-list__control {
         padding: 30px 30px;
     }
 
@@ -988,6 +1004,10 @@
     .testimonials__comment::before,
     .testimonials__comment::after {
         left: 17%;
+    }
+
+    .testimonials__nav {
+        gap: 30px;
     }
 
 }

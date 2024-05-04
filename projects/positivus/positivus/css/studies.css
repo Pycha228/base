@@ -47,7 +47,7 @@
     height: 100%;
 }
 
-.studies__slide.swiper-slide-next {
+.studies__slide.swiper-slide-active {
     border-left: 1px solid var(--text-light);
     border-right: 1px solid var(--text-light);
 }

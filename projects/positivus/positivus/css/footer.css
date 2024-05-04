@@ -97,6 +97,11 @@
     margin-bottom: 0;
 }
 
+.footer__left-email a {
+    transition: var(--transition);
+}
+
+.footer__left-email:hover a,
 .footer__left-tel:hover {
     color: var(--accent-color-2);
 }
@@ -189,6 +194,7 @@
 .footer__bottom {
     display: flex;
     gap: 15px 40px;
+    align-items: center;
 }
 
 .footer__bottom-text {

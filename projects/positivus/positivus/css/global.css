@@ -130,6 +130,14 @@ html {
     top: 30px;
     width: 50px;
     height: 50px;
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+.modal__cancel:hover {
+    border-radius: 50%;
+    background: var(--accent-color-2);
 }
 
 .modal__cancel span {
@@ -177,6 +185,7 @@ html {
     margin-bottom: 25px;
     font-size: 18px;
     line-height: 23px;
+    cursor: pointer;
 }
 
 .modal__name-label input::placeholder,
