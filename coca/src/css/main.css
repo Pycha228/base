@@ -1,3 +1,8 @@
 body {
-    background: gray;
+    position: relative;
+    top: 1px;
+    left: 2px;
+    display: inline;
+    width: 50px;
+    background: #fff;
 }
