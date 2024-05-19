@@ -4,10 +4,11 @@
   @include mobile {
     padding: 76px 0;
   }
-  
+
   &__container {
     @include flex-all-between;
     gap: 30px;
+    max-width: 1110px;
 
     @include small-tablet {
       flex-direction: column;

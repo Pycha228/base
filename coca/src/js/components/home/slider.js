@@ -18,7 +18,7 @@ export const useInsightSlider = () => {
 
 export const useTestimonialsSlider = () => {
   new Swiper('.testimonials__slider', {
-    modules: [ Navigation ],
+    modules: [Navigation],
     slidesPerView: 'auto',
     loop: true,
     spaceBetween: 22,
