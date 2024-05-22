@@ -8,8 +8,10 @@ import {
   useInsightSlider,
   useTestimonialsSlider,
 } from './components/home/slider.js';
+import { useScroll } from './components/scroll.js';
 
 useTheme();
 useBurger();
+useScroll();
 useInsightSlider();
 useTestimonialsSlider();
