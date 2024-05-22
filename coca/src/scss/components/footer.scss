@@ -107,6 +107,20 @@
   }
 
   &__nav {
+    &--mobile {
+      display: none;
+
+      @include small-mobile {
+        display: flex;
+      }
+    }
+
+    &--desktop {
+      @include small-mobile {
+        display: none;
+      }
+    }
+
     @include tablet {
       width: 100%;
     }
@@ -145,6 +159,10 @@
 
     @include mobile {
       min-width: 143px;
+    }
+
+    @include small-mobile {
+      min-width: 200px;
     }
   }
 
@@ -276,5 +294,15 @@
     font-weight: 500;
     line-height: 143%;
     color: #fff;
+  }
+}
+
+.accordion {
+  &-list {
+    &__content {
+      overflow: hidden;
+      max-height: 0;
+      transition: var(--transition);
+    }
   }
 }
