@@ -1,6 +1,10 @@
 .partners {
   padding: 108px 0;
 
+  @include tablet {
+    padding: 108px 45px;
+  }
+
   @include mobile {
     padding: 76px 0;
   }
@@ -18,9 +22,14 @@
   }
 
   &__title {
+    min-width: 320px;
     font-weight: 500;
     line-height: 1.78;
     color: var(--neutral-color-150);
+
+    @include mobile {
+      min-width: 300px;
+    }
 
     &-num {
       display: block;
@@ -35,21 +44,51 @@
     }
   }
 
+  &--desktop {
+    display: block;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &--mobile {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+  }
+
   &__list {
     @include flex-all-center;
     gap: 10px 30px;
     flex-wrap: wrap;
+    }
 
     @include mobile {
       gap: 10px;
     }
-  }
 
   &__item {
     @include flex-all-center;
     border-radius: 16px;
     width: 160px;
     height: 90px;
+    background-color: #fff;
+  }
+
+  &__slider {
+    &-wrapper {
+      max-width: 730px;
+    }
+  }
+
+  &__slide.swiper-slide {
+    @include flex-all-center;
+    border-radius: 16px;
+    height: 90px;
+    max-width: 160px;
     background-color: #fff;
   }
 }

@@ -1,6 +1,6 @@
 export const useScroll = () => {
   let lastScroll = 0;
-  const defaultOffset = 1;
+  const defaultOffset = 5;
   const header = document.querySelector('.header');
 
   const scrollPosition = () => document.documentElement.scrollTop;

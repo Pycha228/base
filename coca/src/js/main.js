@@ -6,6 +6,7 @@ import { useTheme } from './components/theme.js';
 import { useBurger } from './components/burger.js';
 import {
   useInsightSlider,
+  usePartnersSlider,
   useTestimonialsSlider,
 } from './components/home/slider.js';
 import { useScroll } from './components/scroll.js';
@@ -15,3 +16,4 @@ useBurger();
 useScroll();
 useInsightSlider();
 useTestimonialsSlider();
+usePartnersSlider();
